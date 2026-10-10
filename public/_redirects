@@ -1,0 +1,4 @@
+# SPA 路由兜底：/projects、/links 这些路径在 dist 里没有对应的物理文件，
+# 静态托管下直接访问或刷新会 404，交给 index.html 让前端路由接管。
+# 结尾必须是 200（rewrite）；写 301/302 会变成真跳转，SPA 就废了。
+/*    /index.html   200

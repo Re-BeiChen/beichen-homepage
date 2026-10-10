@@ -1,0 +1,25 @@
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+
+# 环境变量与密钥
+# AGENTS.md 红线 2：API Key / Token / .env 一律不入库
+.env
+.env.*
+*.local
+
+# 日志
+*.log
+
+# Claude Code 本地配置
+# launch.json 是本机预览面板的启动配置，属工具侧的本地状态，不入库
+.claude/
+
+# 编辑器与系统
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
